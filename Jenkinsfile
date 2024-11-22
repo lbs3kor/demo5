@@ -7,7 +7,7 @@ pipeline {
                     if (isUnix()) {
                         sh 'nohup ./some_script.sh &'
                     } else {
-                        bat 'start some_script.bat'
+                        bat 'mvn clean install'
                     }
                 }
             }
